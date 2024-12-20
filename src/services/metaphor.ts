@@ -1,3 +1,3 @@
-import Metaphor from 'metaphor-node';
+import Exa from 'exa-js';
 
-export const metaphor = new Metaphor(process.env.EXA_KEY ?? '');
+export const exa = new Exa(process.env.EXA_KEY);

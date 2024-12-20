@@ -1,4 +1,4 @@
-import { metaphor } from '@/services/metaphor';
+import { exa } from '@/services/metaphor';
 import { normalizeUrl } from '@/lib/url';
 
 export type SearchResult = {
@@ -35,7 +35,7 @@ export async function search({
     dateString = undefined;
   }
 
-  const searchResult = await metaphor.search(query, {
+  const searchResult = await exa.search(query, {
     type: isNeural ? 'neural' : 'keyword',
     category,
     numResults,
